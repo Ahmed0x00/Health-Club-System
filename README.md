@@ -497,41 +497,8 @@ JSON files in src/main/resources/data/ store persistent data, managed by corresp
     - MemberUtil and CoachUtil validate inputs (e.g., unique usernames, future expiry dates).
         
     - Dialogs in ManageMembersController.java ensure required fields (e.g., no password for editing)
-        
-- **Module Configuration**:
-    
-    - module-info.java
-        
-        ```java
-        module com.healthclub {  
-    requires javafx.controls;  
-    requires javafx.fxml;  
-    requires com.fasterxml.jackson.databind;  
-    requires java.logging;  
-  
-    opens com.healthclub to javafx.fxml, com.fasterxml.jackson.databind;  
-    opens com.healthclub.controller to javafx.fxml, com.fasterxml.jackson.databind;  
-    opens com.healthclub.model to javafx.fxml, com.fasterxml.jackson.databind;  
-    opens com.healthclub.controller.admin to com.fasterxml.jackson.databind, javafx.fxml;  
-    opens com.healthclub.controller.coach to com.fasterxml.jackson.databind, javafx.fxml;  
-    opens com.healthclub.controller.member to com.fasterxml.jackson.databind, javafx.fxml;  
-  
-    exports com.healthclub.model;  
-    exports com.healthclub.controller.admin;  
-    exports com.healthclub.controller.member;  
-    exports com.healthclub.controller.coach;  
-    exports com.healthclub;  
-  
-        ```
-        
+
 - **Main Application**:
     
     - Main.java initializes the JavaFX application, loads login.fxml, and sets up the primary stage.
         
-- **Extensibility**:
-    
-    - Add AssignMembers.fxml for explicit coach-member assignments if needed.
-        
-    - Extend ReportUtil to store reports in a dedicated reports.json.
-        
-    - Add schedule management via PlanUtil or a new ScheduleUtil.
