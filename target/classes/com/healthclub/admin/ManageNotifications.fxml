@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.healthclub.controller.admin.ManageNotificationsController"
+      spacing="20" style="-fx-padding: 20;">
+    <Label text="Manage Notifications" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <TableView fx:id="notificationTable">
+        <columns>
+            <TableColumn fx:id="memberColumn" text="Member" prefWidth="150"/>
+            <TableColumn fx:id="messageColumn" text="Message" prefWidth="300"/>
+            <TableColumn fx:id="dateColumn" text="Date" prefWidth="150"/>
+        </columns>
+    </TableView>
+</VBox>

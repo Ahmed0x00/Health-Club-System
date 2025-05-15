@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.healthclub.controller.member.ViewPlanController"
+      spacing="20" style="-fx-padding: 20;">
+    <Label text="Your Plan and Schedule" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <HBox spacing="10">
+        <Label text="Select Date:"/>
+        <DatePicker fx:id="datePicker"/>
+    </HBox>
+    <Label text="Workout Plan:" style="-fx-font-weight: bold;"/>
+    <Label fx:id="workoutPlanLabel" text="No plan assigned." wrapText="true"/>
+    <Label text="Time Slot:" style="-fx-font-weight: bold;"/>
+    <Label fx:id="timeSlotLabel" text="No time slot assigned." wrapText="true"/>
+</VBox>

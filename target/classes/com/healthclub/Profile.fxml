@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.healthclub.controller.ProfileController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+    <Label text="Edit Profile" style="-fx-font-size: 20; -fx-font-weight: bold;"/>
+    <Label text="ID:"/>
+    <TextField fx:id="idField" editable="false"/>
+    <Label text="Username:"/>
+    <TextField fx:id="usernameField" promptText="Enter username"/>
+    <Label text="Password:"/>
+    <PasswordField fx:id="passwordField" promptText="Enter password"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Save" onAction="#handleSave"/>
+    </HBox>
+    <Label fx:id="errorLabel" textFill="red"/>
+    <StackPane fx:id="mainContent"/>
+</VBox>

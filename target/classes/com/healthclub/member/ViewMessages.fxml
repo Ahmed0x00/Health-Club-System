@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.healthclub.controller.member.ViewMessagesController"
+      spacing="20" style="-fx-padding: 20;">
+    <Label text="Messages from Coach" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <TableView fx:id="messageTable">
+        <columns>
+            <TableColumn fx:id="senderColumn" text="Sender" prefWidth="100"/>
+            <TableColumn fx:id="contentColumn" text="Message" prefWidth="300"/>
+            <TableColumn fx:id="timestampColumn" text="Timestamp" prefWidth="200"/>
+        </columns>
+    </TableView>
+</VBox>

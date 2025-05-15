@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox fx:controller="com.healthclub.controller.coach.CoachController"
+      xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="TOP_CENTER">
+    <Label text="Coach Dashboard" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Dashboard" onAction="#loadDashboardView" />
+        <Button text="Manage Plans" onAction="#loadManagePlansView" />
+        <Button text="Send Messages" onAction="#loadSendMessagesView" />
+        <Button text="Profile" onAction="#loadProfileView" />
+    </HBox>
+    <StackPane fx:id="mainContent" minHeight="400" style="-fx-border-color: gray;">
+        <Label text="Welcome to the Coach Dashboard" />
+    </StackPane>
+</VBox>

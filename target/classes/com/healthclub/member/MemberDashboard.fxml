@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox fx:controller="com.healthclub.controller.member.MemberController"
+      xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="TOP_CENTER">
+    <Label text="Member Dashboard" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Dashboard" onAction="#loadDashboardView" />
+        <Button text="View Subscription" onAction="#loadViewSubscriptionView" />
+        <Button text="View Messages" onAction="#loadMessagesView" />
+        <Button text="View Plan" onAction="#loadViewPlanView" />
+        <Button text="Notifications" onAction="#loadNotificationsView" />
+        <Button text="Profile" onAction="#loadProfileView" />
+    </HBox>
+    <StackPane fx:id="mainContent" minHeight="400" style="-fx-border-color: gray;">
+        <Label text="Welcome to the Member Dashboard" />
+    </StackPane>
+</VBox>

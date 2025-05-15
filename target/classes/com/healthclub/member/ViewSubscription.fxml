@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.healthclub.controller.member.ViewSubscriptionController"
+      spacing="20" style="-fx-padding: 20;">
+    <Label text="Subscription Details" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <Label fx:id="expiryLabel" text="Expiry Date: None"/>
+    <Label fx:id="statusLabel" text="Status: None"/>
+    <Label fx:id="coachLabel" text="Coach: None"/>
+</VBox>

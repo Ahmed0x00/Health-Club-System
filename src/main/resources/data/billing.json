@@ -1,0 +1,19 @@
+[ {
+  "id" : "107ab87d-44e6-45d4-a2d8-d5fa3885fd27",
+  "memberId" : "bbc07e24-d2e8-4727-935f-951ce053e1ff",
+  "amount" : 50.0,
+  "dateAdded" : "2025-05-15",
+  "expiryDate" : "2025-06-15"
+}, {
+  "id" : "51827a3e-592b-4f04-9ac6-6888faf45eb3",
+  "memberId" : "2b85bc25-0881-4c9d-a371-8af3632a0965",
+  "amount" : 120.0,
+  "dateAdded" : "2025-05-15",
+  "expiryDate" : "2025-08-15"
+}, {
+  "id" : "3705596b-1c10-4740-813e-aae9469fb116",
+  "memberId" : "dc4b4d19-1e48-4e2c-bfb3-2f9438645418",
+  "amount" : 120.0,
+  "dateAdded" : "2025-05-15",
+  "expiryDate" : "2025-08-15"
+} ]

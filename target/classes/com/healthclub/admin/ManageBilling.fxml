@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.healthclub.controller.admin.ManageBillingController"
+      spacing="20" style="-fx-padding: 20;">
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Manage Billing" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+        <Button text="Edit Selected" onAction="#onEditBilling"/>
+    </HBox>
+    <TableView fx:id="billingTable">
+        <columns>
+            <TableColumn fx:id="memberColumn" text="Member" prefWidth="150"/>
+            <TableColumn fx:id="dateAddedColumn" text="Subscription Date" prefWidth="150"/>
+            <TableColumn fx:id="amountColumn" text="Amount ($)" prefWidth="100"/>
+            <TableColumn fx:id="expiryDateColumn" text="Expiry Date" prefWidth="150"/>
+        </columns>
+    </TableView>
+</VBox>

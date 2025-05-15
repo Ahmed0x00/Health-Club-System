@@ -1,0 +1,36 @@
+[ {
+  "id" : "admin1",
+  "username" : "admin",
+  "password" : "123",
+  "role" : "ADMIN"
+}, {
+  "id" : "a152d080-e7c2-4d3d-addf-9d38e6a7a8d4",
+  "username" : "coach1",
+  "password" : "123",
+  "role" : "COACH"
+}, {
+  "id" : "bbc07e24-d2e8-4727-935f-951ce053e1ff",
+  "username" : "test",
+  "password" : "123",
+  "role" : "MEMBER"
+}, {
+  "id" : "64b79c01-ee22-427c-8872-5f2d90f83abe",
+  "username" : "coach2",
+  "password" : "123",
+  "role" : "COACH"
+}, {
+  "id" : "2b85bc25-0881-4c9d-a371-8af3632a0965",
+  "username" : "mem",
+  "password" : "123",
+  "role" : "MEMBER"
+}, {
+  "id" : "dc4b4d19-1e48-4e2c-bfb3-2f9438645418",
+  "username" : "tes111344444",
+  "password" : "123",
+  "role" : "MEMBER"
+}, {
+  "id" : "fc851e27-0bc4-402b-90f7-7ee9c6f3474c",
+  "username" : "cc33",
+  "password" : "123",
+  "role" : "COACH"
+} ]

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.healthclub.controller.coach.SendMessagesController"
+      spacing="20" style="-fx-padding: 20;">
+    <Label text="Send Messages to All Members" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <Label text="Message:"/>
+    <TextArea fx:id="messageArea" prefHeight="100"/>
+    <Button fx:id="sendButton" text="Send Message" onAction="#sendMessage" disable="true"/>
+</VBox>

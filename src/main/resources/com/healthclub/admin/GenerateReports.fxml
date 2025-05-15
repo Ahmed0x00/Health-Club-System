@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.healthclub.controller.admin.GenerateReportsController"
+      spacing="20" style="-fx-padding: 20;">
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Generate Reports" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    </HBox>
+    <HBox spacing="10">
+        <Label text="Report Type:"/>
+        <ComboBox fx:id="reportTypeCombo" prefWidth="200"/>
+        <Label text="Days (for Expiring):"/>
+        <TextField fx:id="daysField" prefWidth="100"/>
+        <Button text="Generate" onAction="#generateReport"/>
+    </HBox>
+    <TableView fx:id="reportTable">
+        <columns>
+            <TableColumn fx:id="col1" text="Column 1" prefWidth="150"/>
+            <TableColumn fx:id="col2" text="Column 2" prefWidth="150"/>
+            <TableColumn fx:id="col3" text="Column 3" prefWidth="150"/>
+            <TableColumn fx:id="col4" text="Column 4" prefWidth="150"/>
+            <TableColumn fx:id="col5" text="Column 5" prefWidth="150"/>
+        </columns>
+    </TableView>
+    <Button fx:id="exportButton" text="Export to CSV" onAction="#exportReport" disable="true"/>
+</VBox>

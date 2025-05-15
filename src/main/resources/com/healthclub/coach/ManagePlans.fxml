@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.healthclub.controller.coach.ManagePlansController"
+      spacing="20" style="-fx-padding: 20;">
+    <Label text="Manage Daily Plans" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <HBox spacing="10">
+        <Label text="Select Date:"/>
+        <DatePicker fx:id="datePicker"/>
+    </HBox>
+    <Label text="Workout Plan:"/>
+    <TextArea fx:id="workoutPlanArea" prefHeight="100"/>
+    <Label text="Time Slot (e.g., 18:00-19:00):"/>
+    <TextField fx:id="timeSlotField"/>
+    <Button fx:id="saveButton" text="Save Plan" onAction="#savePlan" disable="true"/>
+</VBox>
